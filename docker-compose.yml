@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  web:
+    container_name: benny_wasender_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9001:9001"
+    restart: unless-stopped
